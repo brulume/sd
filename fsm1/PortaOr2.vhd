@@ -2,17 +2,16 @@ library ieee;
 use ieee.std_logic_1164.all;
 
 entity PortaOr2 is
-    port (x, y: in std_logic;
+	port (x, y: in std_logic;
 		F, G: out std_logic
-    );
+	);
 end PortaOr2;
 
--- arquitetura das portas logicas
 architecture comportamento of PortaOr2 is
-	begin
+begin
 	process (x, y)
-		begin
+	begin
 		F <= x or y;
 		G <= x or y;
-   end process;
+	end process;
 end comportamento;
