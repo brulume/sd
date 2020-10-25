@@ -1,12 +1,12 @@
 library ieee;
 use ieee.std_logic_1164.all;
 
-entity PortaNot4 is
+entity PortaNot is
 	port (x: in std_logic;
 		f: out std_logic);
-end PortaNot4;
+end PortaNot;
 
-architecture comportamento of PortaNot4 is
+architecture comportamento of PortaNot is
 begin
 	process (x)
 	begin
